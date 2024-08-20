@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Encriptación</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="presentacion">
+        <div class="presentacion_encriptar">
+            <div class="titulo">
+                <img class="logo_alura" src="./assets/Logo.png" alt="logo de alura">
+                <h1 class="header_titulo" >Encriptador de Texto <img class="icono_encriptador" src="./assets/icono_encriptador.png" alt="icono de encriptador" style="vertical-align: middle;"></h1>
+            </div>
+            <div class="seccion_encriptar">
+                <textarea class="texto_encriptar" id="texto_encriptar" rows="6" placeholder="Ingrese el texto aquí" style="resize: none;" ></textarea>
+                <div class="alerta">
+                    <p><img class="icono_alerta" src="./assets/alerta.png" alt="simbolo de alerta" style="vertical-align: middle;"> Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="btn_encriptar" id="btn_encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn_desencriptar" id="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="presentacion_resultado">
+            <div class="resultado" id="resultado"></div>
+            <img class="muñeco" id="muñeco" src="./assets/Muñeco.png" alt="Imagen descriptiva">
+            <h3 class="titulo_resultado" id="titulo_resultado">Ningún mensaje fue encontrado</h3>
+            <p class="parrafo_resultado" id="parrafo_resultado">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="btn_copiar" id="btn_copiar" style="display: none;" onclick="copiarAlPortapapeles()">Copiar</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Desarrollado por Martin Velásquez</p>
+        <p>Email: martinvrb98@gmail.com</p>
+    </footer>
+</body>
+<script src="./scripts/app.js"></script>
+</html>
